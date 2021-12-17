@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/xpenfl"
+    android:padding="5dp"
+    android:layout_marginTop="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/sourceRoomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_weight="0.4"
+            android:hint="Source Room Name" />
+
+        <Button
+            android:id="@+id/addSourceRoomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:background="@drawable/xpenfl_button"
+            android:layout_weight="0.7"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/delSourceRoomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:maxLines="1"
+            android:background="@drawable/xpenfl_button"
+            android:layout_weight="0.7"
+            android:text="DEL" />
+    </LinearLayout>
+
+    
+    
+
+    <ScrollView
+        android:id="@+id/sourceRoomScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/sourceRoomTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="LIST" />
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="에서 온 메시지를.."
+        android:textColor="@color/purple_200"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00ffff"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/targetRoomEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_weight="0.4"
+            android:hint="Target Room Name" />
+
+        <Button
+            android:id="@+id/addTargetRoomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:maxLines="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/xpenfl_button"
+            android:text="ADD" />
+        <Button
+            android:id="@+id/delTargetRoomButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:maxLines="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/xpenfl_button"
+            android:text="DEL" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/targetRoomScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/targetRoomTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="LIST" />
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/addBigdataButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:background="#11111111"
+            android:textColor="@color/purple_200"
+            android:text="서무→빅데이터\n불러오기"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|bottom"
+            android:layout_gravity="bottom"
+            android:text="으로 전달합니다."
+            android:textColor="@color/purple_200"
+            android:textSize="20sp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00ffff"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#00ffff"/>
+
+    <ScrollView
+        android:id="@+id/logScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7">
+
+        <TextView
+            android:id="@+id/logTextView"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="LOG가 표시됩니다.\n" />
+    </ScrollView>
+
+</LinearLayout>
